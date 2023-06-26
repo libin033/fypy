@@ -188,3 +188,28 @@ def wind_direction(u, v, convention='from'):
     -------
 
     '''
+
+
+def calc_ndvi(vis006, nir008):
+
+    return (nir008 - vis006) / (nir008 + vis006)
+
+def calc_evi(vis004, vis006, nir008):
+
+    G = 2.5     # 增益系数
+    c1 = 6.0    # 气溶胶系数
+    c2 = 7.5    # 气溶胶系数
+    L = 1.0     # 土壤背景的调节系数
+
+    return G * (nir008 - vis006) / (nir008 + c1 * vis006 - c2 * vis004 + L)
+
+def calc_tvi(vis005, vis006, nir008):
+
+    return 0.5 * (120 * (nir008 - vis005) - 200 * (vis006 - vis005))
+
+def calc_rvi(vis006, nir008):
+
+    return nir008 / vis006
+
+
+

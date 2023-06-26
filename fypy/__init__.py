@@ -14,8 +14,8 @@ from .version import get_versions
 __version__ = get_versions()['version']
 del get_versions
 
-# __version__ = "1.1.12"
-# version_tuple = (1, 1, 12)
+# __version__ = "1.0.0"
+# version_tuple = (1, 0, 0)
 # try:
 #     from fypy.version import version as __version__  # noqa
 # except ModuleNotFoundError:

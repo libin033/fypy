@@ -211,9 +211,11 @@ class AtmCorr_GF(AtmCorr):
             else:
                 gain = CalCoeff[satid][instid][stryear]['gain']
                 bias = CalCoeff[satid][instid][stryear]['bias']
-                break
 
-        return gain, bias
+                return gain, bias
+
+        # raise Exception('未匹配到该年【%s】系数' %(nowdate.strftime('%Y')))
+        return None, None
 
     def ortho_rectification(self, dstfile, srcfile, rpcfile, demfile=None):
         """

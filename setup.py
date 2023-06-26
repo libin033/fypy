@@ -15,7 +15,7 @@ DIR = os.path.dirname(os.path.abspath(__file__))
 # INSTALL_PACKAGES = open(os.path.join(DIR, 'requirements.txt')).read().splitlines()
 
 
-# __version__ = '1.1.12'
+# __version__ = '1.0.0'
 # from fypy import __version__
 # from fypy.version import version as __version__
 
