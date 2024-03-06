@@ -19,7 +19,7 @@ import numpy as np
 import datetime
 from osgeo import gdal
 
-from Py6S import SixS, Geometry, AtmosProfile, AeroProfile, \
+from fypy.py6s import SixS, Geometry, AtmosProfile, AeroProfile, \
     Altitudes, Wavelength, PredefinedWavelengths, AtmosCorr, GroundReflectance
 
 
@@ -150,6 +150,9 @@ class AtmCorr() :
         b = self.s.outputs.coef_xb
         c = self.s.outputs.coef_xc
         # x = s.outputs.values
+        # measured radiance [w/m2/sr/mic]
+        # y=xa*(measured radiance)-xb;  acr=y/(1.+xc*y)
+
         return a, b, c
 
     def corrImage(self, data, a, b, c, slope=10000):

@@ -319,7 +319,7 @@ class modisscene(BaseAlgorithms) :
                                           resampleAlg,
                                           maxerror)
         if tmp_ds is None :
-            return None, (None, None)
+            return None
 
         if not resolution:
             width = tmp_ds.RasterXSize

@@ -1,13 +1,13 @@
 package:
   name : fypy
-  version : 1.1.1
+  version : 0.1.1
 
 source:
-  path: ./fypy/
-
+  path: D:\pypi\fypy
 
 build:
   number: 0
+  string: pylee
 
 requirements:
   build:
@@ -20,14 +20,15 @@ requirements:
     - netcdf4 >=1.0.0
     - tqdm >=4.0.0
     - pyshp >=2.1.0
+    - gdal >=2.0.0
     - pillow >=6.0.0
     - imageio >=2.15.0
 
-  test:
-    imports:
-      - fypy
+test:
+  commands:
+    - python -c "from fypy.fy3 import fy3scene"
 
-  about:
-    licents: MIT
-    doc_url: https://fypy.readthedocs.io/zh/latest/
-    description: fypy Library for FENGYUN Satellite
+about:
+  licents: MIT
+  doc_url: https://fypy.readthedocs.io/zh/latest/
+  description: fypy Library for FENGYUN Satellite

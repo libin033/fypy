@@ -19,8 +19,8 @@ DIR = os.path.dirname(os.path.abspath(__file__))
 # from fypy import __version__
 # from fypy.version import version as __version__
 
-from fypy.version import get_versions
-__version__ = get_versions()['version']
+from fypy.version import __version__
+# __version__ = get_versions()['version']
 
 mod_expy=Extension('',
                    sources=[],

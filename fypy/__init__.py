@@ -12,9 +12,12 @@
 
 __import__ ('pkg_resources').declare_namespace (__name__)
 
-from .version import get_versions
-__version__ = get_versions()['version']
-del get_versions
+from . import version
+from .version import __version__
+
+# from .version import get_versions
+# __version__ = get_versions()['version']
+# del get_versions
 
 from fypy.ahi import ahiscene
 from fypy.fy3 import fy3scene

@@ -88,6 +88,8 @@ class AtmCorr_GF(AtmCorr):
             #         AtcCofa, AtcCofb, AtcCofc = self.corrCoeff()
 
             self.setParam(nowdate, metedata, SatID, InstID, BandID+1)
+            # measured radiance [w/m2/sr/mic]
+            # y=xa*(measured radiance)-xb;  acr=y/(1.+xc*y)
             AtcCofa, AtcCofb, AtcCofc = self.corrCoeff()
 
             i = 0
