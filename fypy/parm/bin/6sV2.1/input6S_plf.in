@@ -1,0 +1,15 @@
+0 (User defined)
+30.00 0.0 30.00 0.00 4 28 (geometrical conditions)
+0  (No Gaseous Absorptio)
+1 Continental Model
+0
+0.20 value
+0 (target level)
+-1000 (sensor level)
+43 (chosen band)
+0 Homogeneous surface
+1 (directional effects)
+10 (MODIS operational BDRF)
+0.3091 0.1290 0.0762
+-1 No atm. corrections selected
+ 

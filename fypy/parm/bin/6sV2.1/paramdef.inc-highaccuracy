@@ -1,0 +1,7 @@
+      parameter(nt_p=50,mu_p=75,mu2_p=148,np_p=149,nfi_p=181)
+      parameter (nquad_p=200)
+      parameter (nt_p_max=100,nqmax_p=1000,nqdef_p=83) ! do not change
+ 
+      ! Attention
+      ! mu2_p has to be equal to (mu_p-1)*2
+

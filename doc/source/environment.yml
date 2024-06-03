@@ -1,0 +1,36 @@
+name: fypy_docs
+channels:
+  - conda-forge
+dependencies:
+  - python
+  # specify additional dependencies to reduce solving for conda
+  - gdal
+  - libgdal
+  - proj
+  - geos
+  - pip
+  - numpy
+  - h5py
+  - netcdf4
+  - tqdm
+  - pyshp
+  - pillow
+  - imageio
+  - sphinx-rtd-theme
+  - shapely
+  - pandas
+  - shapely
+  - pyproj
+  - geopy
+  - matplotlib
+  - sphinx
+  - sphinx-gallery
+  - doc2dash
+  - dask
+  - xarray
+  - pyresample
+  - geopandas
+  - scipy
+
+
+
